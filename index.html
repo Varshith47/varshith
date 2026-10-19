@@ -3,9 +3,15 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f3ee">
+<meta name="theme-color" content="#090d18">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Varshith Reddy Nimma — Software Developer">
+  <meta property="og:description" content="Projects in full-stack development, applied AI, and software quality.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%235eead4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%23090d18'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='35' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EV%3C/text%3E%3C/svg%3E">
   <meta name="description" content="Varshith Reddy Nimma — Computer Science Engineering student, full-stack developer, and aspiring AI/ML engineer from Telangana.">
-  <title>Varshith Reddy Nimma — Developer Portfolio</title>
+  <title>Varshith Reddy Nimma — Software Developer & Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
@@ -77,6 +83,31 @@
     .featured-copy{padding:clamp(24px,4vw,45px);background:#11182a;display:flex;flex-direction:column;justify-content:center}.featured-copy h3{font:500 clamp(28px,3.3vw,42px)/1.05 var(--serif);letter-spacing:-.04em;margin:12px 0}.featured-copy p{color:#aab4ce;font-size:13px;line-height:1.85}.featured-copy .project-tags{margin-top:10px}.featured-copy .featured-links{display:flex;gap:15px;align-items:center;margin-top:24px;flex-wrap:wrap}
     @media(max-width:780px){.featured-inner{grid-template-columns:1fr}.featured-visual{min-height:250px}.internship-banner{align-items:flex-start;flex-direction:column}}
 
+
+    .portrait-card{background:#12182a;border:1px solid #485071;isolation:isolate}
+    .portrait-card:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 48%,rgba(7,12,24,.82) 100%);pointer-events:none}
+    .portrait-card:after{z-index:2}
+    .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:saturate(.78) contrast(1.04);z-index:0}
+    .art-label{z-index:3}
+    .art-card{border-radius:190px 190px 24px 24px}
+    .hero-photo-note{position:absolute;z-index:4;left:22px;top:24px;background:rgba(9,13,24,.74);border:1px solid rgba(166,255,239,.3);border-radius:30px;padding:8px 11px;color:#b8fff4;font:9px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .project-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 22px}
+    .filter-row{display:flex;gap:8px;flex-wrap:wrap}
+    .filter-btn{border:1px solid #34405f;background:#11182a;color:#b9c5e3;border-radius:30px;padding:9px 13px;font:10px var(--mono);cursor:pointer;transition:.2s}
+    .filter-btn:hover,.filter-btn.active{background:#a6ffef;color:#09101c;border-color:#a6ffef}
+    .project-search{min-width:min(100%,260px);border:1px solid #34405f;background:#11182a;color:#f3f5ff;border-radius:30px;padding:11px 15px;font:12px var(--sans);outline:none}
+    .project-search:focus{border-color:#5eead4;box-shadow:0 0 0 3px #5eead41c}
+    .project-card[hidden]{display:none!important}
+    .project-count{font:10px var(--mono);color:#8e9bbb}
+    .quick-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .quick-chip{display:inline-flex;align-items:center;gap:8px;border:1px solid #34405f;border-radius:12px;padding:10px 12px;background:#10172a;color:#dce5ff;font-size:11px}
+    .quick-chip:hover{border-color:#5eead4;color:#a6ffef}
+    .copy-email{border:0;border-bottom:1px dashed #5c7290;background:none;color:#162039;padding:0 0 4px;font:inherit;cursor:pointer}
+    .copy-status{font:10px var(--mono);color:#25304c;min-height:14px;margin-top:8px}
+    .availability i{animation:pulse-dot 2s infinite}
+    @keyframes pulse-dot{50%{box-shadow:0 0 0 7px rgba(94,234,212,.03)}}
+    @media(max-width:540px){.project-tools{align-items:stretch}.project-search{width:100%}.filter-row{gap:6px}.filter-btn{padding:8px 10px}}
+
   </style>
 </head>
 <body>
@@ -110,7 +141,7 @@ world.</h1>
 <div class="hero-actions">
 <a href="#work" class="button">Explore my work <span>↓</span>
 </a>
-<a class="text-link" href="#about">A little about me ↗</a>
+<a class="text-link" href="https://github.com/Varshith47" target="_blank" rel="noreferrer">GitHub profile ↗</a>
 </div>
 </div>
 <div class="art reveal" aria-label="Abstract landscape artwork">
@@ -118,7 +149,7 @@ world.</h1>
 <span class="orb">
 </span>
 </div>
-<div class="art-card">
+<div class="art-card portrait-card" role="img" aria-label="Portrait-style photo placeholder"><span class="hero-photo-note">Photo placeholder</span>
 <span class="sun">
 </span>
 <span class="hill">
@@ -134,9 +165,9 @@ world.</h1>
 </div>
   <div class="ticker" aria-label="Areas of interest">
 <div class="ticker-track" aria-hidden="true">
-<div class="ticker-item">Python <b>✳</b> Java <b>✳</b> Full-stack Development <b>✳</b> Machine Learning <b>✳</b> Real-Time Systems <b>✳</b> Problem Solving <b>✳</b>
+<div class="ticker-item">Python <b>✳</b> PHP & MySQL <b>✳</b> Full-stack Development <b>✳</b> Applied AI / ML <b>✳</b> Software Quality <b>✳</b> Practical Problem Solving <b>✳</b>
 </div>
-<div class="ticker-item">Python <b>✳</b> Java <b>✳</b> Full-stack Development <b>✳</b> Machine Learning <b>✳</b> Real-Time Systems <b>✳</b> Problem Solving <b>✳</b>
+<div class="ticker-item">Python <b>✳</b> PHP & MySQL <b>✳</b> Full-stack Development <b>✳</b> Applied AI / ML <b>✳</b> Software Quality <b>✳</b> Practical Problem Solving <b>✳</b>
 </div>
 </div>
 </div>
@@ -150,35 +181,45 @@ world.</h1>
 </div>
 <p class="section-aside">I like projects that connect code to a real need — from college workflow automation to business tools, communication experiences, and early machine-learning experiments.</p>
 </div>
-<article class="featured-project reveal">
+<article class="featured-project reveal project-filter-item" data-category="ai" data-search="AI powered talent job fit recruitment python flask nlp scikit learn pandas resume matching">
     <div class="featured-inner">
       <div class="featured-visual"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85" alt="Team reviewing candidate information for an AI recruitment platform" loading="lazy"></div>
       <div class="featured-copy">
         <div class="project-kicker">FEATURED PROJECT · AI / MACHINE LEARNING</div>
         <h3>AI-Powered Talent Job Fit Platform</h3>
-        <p>A recruitment-support platform concept that analyses candidate resumes and job descriptions to surface relevant skills, estimate role fit, and help organise candidate-to-job matching. The project brings together text processing, feature extraction, matching logic, and a user-friendly workflow for reviewing results.</p>
+        <p>A recruitment-support project that explores how candidate resumes and job descriptions can be compared to surface relevant skills and organise candidate-to-job matching. The project brings together text processing, feature extraction, matching logic, and a user-friendly workflow for reviewing results.</p>
         <p><strong>What it explores:</strong> resume parsing, skills matching, job-fit scoring, candidate ranking, and explainable recommendations to support—not replace—human hiring decisions.</p>
         <div class="project-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">NLP</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span></div>
         <div class="featured-links"><a href="https://github.com/Varshith47/hybrid-ai-ml-recruitment" target="_blank" rel="noreferrer" class="button">View GitHub <span>↗</span></a><a href="https://hybrid-ai-ml-recruitment.onrender.com/login" class="text-link">Try the project ↗</a></div>
       </div>
     </div>
   </article>
+  <div class="project-tools reveal" aria-label="Project filters">
+    <div class="filter-row" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All work</button>
+      <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+      <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+      <button class="filter-btn" type="button" data-filter="business" aria-pressed="false">Business tools</button>
+    </div>
+    <input id="project-search" class="project-search" type="search" placeholder="Search projects or technologies…" aria-label="Search projects">
+    <span id="project-count" class="project-count" aria-live="polite">5 projects</span>
+  </div>
   <div class="project-grid">
-    <article class="project-card reveal">
+    <article class="project-card reveal project-filter-item" data-category="web" data-search="exam seating allocation system flask python sqlite student halls education automation">
       <div class="project-art a"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Laptop and digital workspace representing software development" loading="lazy"><span class="visual-label">01 · WEB APPLICATION</span></div>
-      <div class="project-info"><div class="project-kicker">EDTECH · AUTOMATION</div><h3>Exam Seating Allocation System</h3><p>A Flask-based tool for entering student data, configuring exam halls, and generating hall-wise seating plans. The goal is to make a repetitive college workflow more organised and less error-prone.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">HTML/CSS</span></div><a href="https://github.com/Varshith47/exam-seating-allocation-system/" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Explore projects on GitHub">↗</a></div>
+      <div class="project-info"><div class="project-kicker">EDTECH · AUTOMATION</div><h3>Exam Seating Allocation System</h3><p>A Flask-based tool for entering student data, configuring exam halls, and generating hall-wise seating plans. The goal is to make a repetitive college workflow more organised and less error-prone.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">HTML/CSS</span></div><a href="https://github.com/Varshith47/exam-seating-allocation-system/" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Open project repository on GitHub">↗</a></div>
     </article>
-    <article class="project-card reveal">
+    <article class="project-card reveal project-filter-item" data-category="web" data-search="video sharing chat app php mysql javascript private messaging rooms typing indicators">
       <div class="project-art b"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=85" alt="Digital media interface representing video sharing and chat" loading="lazy"><span class="visual-label">02 · REAL-TIME EXPERIENCE</span></div>
-      <div class="project-info"><div class="project-kicker">COMMUNICATION · FULL STACK</div><h3>Video Sharing & Chat App</h3><p>A video-sharing chat concept with room-based conversations, private messages, typing indicators, and a responsive layout. It explores database design, authentication flows, and real-time communication patterns.</p><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">WebSockets concepts</span></div><a href="https://github.com/Varshith47/video-sharing-chat" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Explore projects on GitHub">↗</a></div>
+      <div class="project-info"><div class="project-kicker">COMMUNICATION · FULL STACK</div><h3>Video Sharing & Chat App</h3><p>A video-sharing chat concept with room-based conversations, private messages, typing indicators, and a responsive layout. The upgraded version uses database-backed messaging and polling-based updates to approximate a real-time experience.</p><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">Polling-based chat</span></div><a href="https://github.com/Varshith47/video-sharing-chat" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Open project repository on GitHub">↗</a></div>
     </article>
-    <article class="project-card reveal">
+    <article class="project-card reveal project-filter-item" data-category="business" data-search="swimming pool management POS PHP MySQL inventory sales bookings customers swimmer timers invoices">
       <div class="project-art c"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=85" alt="Analytics dashboard representing swimming pool management software" loading="lazy"><span class="visual-label">03 · BUSINESS SOFTWARE</span></div>
-      <div class="project-info"><div class="project-kicker">MANAGEMENT · POS · INVENTORY</div><h3>Swimming Pool Management & POS</h3><p>A swimming-pool business management concept covering customer records, session timers, overtime alerts, bookings, inventory for swimming accessories, sales, payment tracking, and revenue dashboards.</p><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Dashboard UI</span><span class="tag">Inventory</span></div><a href="https://github.com/Varshith47/pool-management-pos" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Explore projects on GitHub">↗</a></div>
+      <div class="project-info"><div class="project-kicker">MANAGEMENT · POS · INVENTORY</div><h3>Swimming Pool Management & POS</h3><p>A swimming-pool business management concept covering customer records, session timers, overtime alerts, bookings, inventory for swimming accessories, sales, payment tracking, and revenue dashboards.</p><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Dashboard UI</span><span class="tag">Inventory</span></div><a href="https://github.com/Varshith47/pool-management-pos" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Open project repository on GitHub">↗</a></div>
     </article>
-    <article class="project-card reveal">
+    <article class="project-card reveal project-filter-item" data-category="ai" data-search="OCR machine learning experiments Python NLTK text extraction house price regression">
       <div class="project-art d"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85" alt="Digital network visual representing machine learning experiments" loading="lazy"><span class="visual-label">04 · AI / MACHINE LEARNING</span></div>
-      <div class="project-info"><div class="project-kicker">ML · DATA · AUTOMATION</div><h3>OCR & Machine Learning Experiments</h3><p>Python learning work exploring OCR/text extraction, NLTK-based language processing, and a house-price regression exercise. These experiments build familiarity with data preparation, model training, evaluation, and debugging.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">NLTK</span><span class="tag">Scikit-learn</span></div><a href="https://github.com/Varshith47" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Explore projects on GitHub">↗</a></div>
+      <div class="project-info"><div class="project-kicker">ML · DATA · AUTOMATION</div><h3>OCR & Machine Learning Experiments</h3><p>Python learning work exploring OCR/text extraction, NLTK-based language processing, and a house-price regression exercise. These experiments build familiarity with data preparation, model training, evaluation, and debugging.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">NLTK</span><span class="tag">Scikit-learn</span></div><a href="https://github.com/Varshith47" target="_blank" rel="noreferrer" class="project-arrow" aria-label="Open project repository on GitHub">↗</a></div>
     </article>
   </div>
 </div>
@@ -331,9 +372,9 @@ world.</h1>
 <a class="button" href="mailto:varshithreddy5623@gmail.com">Say hello <span>↗</span>
 </a>
 <div class="contact-meta">
-<p>VARSHITHREDDY5623@GMAIL.COM · JANGAON, TELANGANA, INDIA</p>
+<div><p>VARSHITHREDDY5623@GMAIL.COM · JANGAON, TELANGANA, INDIA</p><p id="copy-status" class="copy-status" aria-live="polite"></p></div>
 <div class="socials">
-<a href="mailto:varshithreddy5623@gmail.com">Email ↗</a>
+<button class="copy-email" id="copy-email" type="button">Copy email ↗</button><a href="mailto:varshithreddy5623@gmail.com">Email ↗</a>
 <a href="https://github.com/Varshith47" target="_blank" rel="noreferrer">GitHub ↗</a>
 
 <a href="#top" class="back-top" aria-label="Back to top">↑</a>
@@ -345,11 +386,53 @@ world.</h1>
   </main>
 <footer>
 <span>© <span id="year">
-</span> Varshith Reddy · Made with care</span>
+</span> Varshith Reddy Nimma · Designed with intent</span>
 <a href="#top">Back to the beginning ↑</a>
 </footer>
   <script>
     document.documentElement.classList.add('js');const menuButton=document.querySelector('.menu-toggle'),nav=document.querySelector('nav');menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',open);menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');menuButton.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();const observer=('IntersectionObserver' in window)?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12}):null;document.querySelectorAll('.reveal').forEach(el=>{if(observer)observer.observe(el);else el.classList.add('visible')});
+
+    // Portfolio enhancements: searchable project grid, accessible category filters, and copy-email action.
+    const projectItems = Array.from(document.querySelectorAll('.project-filter-item'));
+    const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+    const projectSearch = document.getElementById('project-search');
+    const projectCount = document.getElementById('project-count');
+    let activeProjectFilter = 'all';
+    function filterProjects() {
+      const term = (projectSearch?.value || '').trim().toLowerCase();
+      let visible = 0;
+      projectItems.forEach(item => {
+        const categoryMatch = activeProjectFilter === 'all' || item.dataset.category === activeProjectFilter;
+        const text = ((item.dataset.search || '') + ' ' + item.textContent).toLowerCase();
+        const searchMatch = !term || text.includes(term);
+        const show = categoryMatch && searchMatch;
+        item.hidden = !show;
+        if (show) visible++;
+      });
+      if (projectCount) projectCount.textContent = `${visible} project${visible === 1 ? '' : 's'}`;
+    }
+    filterButtons.forEach(button => button.addEventListener('click', () => {
+      activeProjectFilter = button.dataset.filter || 'all';
+      filterButtons.forEach(other => {
+        const selected = other === button;
+        other.classList.toggle('active', selected);
+        other.setAttribute('aria-pressed', String(selected));
+      });
+      filterProjects();
+    }));
+    projectSearch?.addEventListener('input', filterProjects);
+    const copyButton = document.getElementById('copy-email');
+    copyButton?.addEventListener('click', async () => {
+      const email = 'varshithreddy5623@gmail.com';
+      const status = document.getElementById('copy-status');
+      try {
+        await navigator.clipboard.writeText(email);
+        if (status) status.textContent = 'Email copied to clipboard.';
+      } catch (error) {
+        if (status) status.textContent = 'Email: ' + email;
+      }
+    });
+
   </script>
 </body>
 </html>
